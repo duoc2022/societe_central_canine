@@ -3,3 +3,27 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+home:
+    path: /
+    controller: App\Controller\HomeController::index
+
+adhesion:
+    path: /adhesion
+    controller: App\Controller\AdhesionController::index
+
+events:
+    path: /events
+    controller: App\Controller\EventsController::index
+
+contact:
+    path: /contact
+    controller: App\Controller\ContactController::index
+
+team:
+    path: /team
+    controller: App\Controller\TeamController::index
+
+resultats:
+    path: /resultats
+    controller: App\Controller\ResultatsController::index
