@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class AdhesionController extends AbstractController
 {
-    #[Route('/adhesion', name: 'app_adhesion')]
+    #[Route('/adhesion', name: 'adhesion')]
     public function index(): Response
     {
         return $this->render('adhesion/index.html.twig', [

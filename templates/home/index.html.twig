@@ -1,20 +1,70 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Société Central Canine{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>C:/src/projet_symfony/societe_central_canine/src/Controller/HomeController.php</code></li>
-        <li>Your template at <code>C:/src/projet_symfony/societe_central_canine/templates/home/index.html.twig</code></li>
-    </ul>
+   {% include 'includes/header.html.twig' %}
+    <header class="header"> 
+ <div style="height: 1000px">
+    <!-- just to make scrolling effect possible -->
+    <section class="home"></section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="myH1" style="margin-top: -350px; color:white">ASSOCIATION CANINE TERRITORIALE<br> RHÔNE-ALPES</h1>
+            </div>
+        </div>
+        <div class="container" style="margin-top: 20px">
+            <div class="row">
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-outline-info" style="float: left; font-size: 3rem">ACTUALITES</button>
+                </div>
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-outline-success" style="float: right; font-size: 3rem">NEWSLETTER</button>
+                </div>
+            </div>
+            <br>
+            <div>
+                <div class="row">
+                    <ul class="flex-container" style="list-style: none; padding: 0;">
+                        <li class="flex-item" style="text-align: center; border: 0;">
+                            <a href="#">
+                                <img src="assets/images/pour_photo_actra.jpg" class="img-fluid" alt="Responsive image">
+                                <h4 style="color: black; margin-top: 15px;">Exposition Canine Internationale <br>LYON EUREXPO CHASSIEU<br>dimanche 14 avril 2024<br>
+                                    Séance de Confirmation le samedi 13 avril 2024</h4>
+                            </a>
+                        </li>
+                        <li class="flex-item" style="text-align: center; border: 0;">
+                            <a href="#">
+                                <img src="assets/images/Exposition_Canine_Internationale_de_VALENCE.jpg" class="img-fluid" alt="Responsive image">
+                                <h4 style="color: black; margin-top: 15px;">Exposition Canine Internationale<br>VALENCE-LAC<br>samedi 04 et dimanche 05 mai 2024<br>
+                                    Renseignements ACTRA/ Mme Dany MEYER <br>04 75 23 42 21 <br>
+                                    laurent.prouvensier@yahoo.fr - michele.rollet93@orange.fr</h4>
+                            </a>
+                        </li>
+                        <li class="flex-item" style="text-align: center; border: 0;">           
+                            <a href="#">
+                                <img src="assets/images/peronnas_2024.jpg" class="img-fluid" alt="Responsive image">
+                                <h4 style="color: black; margin-top: 15px;">Séance de confirmation toutes races<br>BOURG-EN-BRESSE<br>mercredi 26 juin 2024</h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+                <div class="container">
+                    <div class="row" style="margin-top: 20px; margin-bottom: 20px; text-align: center;">
+                        <div class="col-md-12">
+                        <br>
+                            <button type="button" class="btn btn-outline-warning" style="font-size: 3rem">PLUS D'ACTUALITES</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-{% endblock %}
+<div class="container" style="margin-top: 300px">
+    </header>
+   {% include 'includes/footer.html.twig' %}
+    {% endblock %}
